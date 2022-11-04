@@ -17,16 +17,16 @@
             <a class="nav-link active fs-2" aria-current="page" href="#">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#">Vinculados</a>
+            <router-link to="/usuario">Vinculados</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#">Papeleria</a>
+            <router-link to="/categoria">Categorias</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#">Inventario</a>
+            <router-link to="/ventas">Ventas</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#">Productos</a>
+            <router-link to="/proveedor">Proveedores</router-link>
           </li>
         </ul>
       </div>

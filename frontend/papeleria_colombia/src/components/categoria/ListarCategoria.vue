@@ -13,17 +13,16 @@
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">descripcion</th>
             <th scope="col">Nombre</th>
+            <th scope="col">descripcion</th>
             <th colspan="2" scope="col">Opcion</th>
           </tr>
         </thead>
         <tbody class="table-group-divider">
           <tr v-for="categoria in categorias" :key="categoria.id_categoria">
             <th scope="row" >{{ categoria.id_categoria }}</th>
-            <td>{{ categoria.id_categoria }}</td>
-            <td>{{ categoria.descripcion }}</td>
             <td>{{ categoria.nombre }}</td>
+            <td>{{ categoria.descripcion }}</td>
             <td> <button type="button" class="btn btn-danger" @click="eliminar(categoria.id_categoria)">Eliminar </button> <button type="button"
                 class="btn btn-success"> Editar</button></td>
           </tr>

@@ -60,16 +60,22 @@
                                 <label for="estado" class="form-label">Estado</label>
                                 <input type="text" class="form-control" id="estado" v-model.trim="usuario.estado">
                             </div>
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelect"
-                                    aria-label="Floating label select example" v-model="usuario.id_roles">
-                                    <option disabled selected>seleciona un rol</option>
-                                    <option value=1>Admin</option>
-                                    <option value=2>Cliente</option>
-                                    <option value=3>Vendedor</option>
-                                </select>
+                             <div class="form-floating">
+                                <b-form-select v-model="selected" :options="options" class="mb-3">
+                                 
+                                    <template #first>
+                                        <b-form-select-option :value="null" disabled>-- Please select an option --
+                                        </b-form-select-option>
+                                    </template>
+
+                                  
+                                    <b-form-select-option value="C">Option C</b-form-select-option>
+                                    <b-form-select-option value="D">Option D</b-form-select-option>
+                                </b-form-select>
+
+                                <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
                                 <label for="floatingSelect">seleciona un rol</label>
-                            </div>
+                            </div> 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary"
                                     data-bs-dismiss="modal">Cancelar</button>

@@ -2,9 +2,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+//importar bootstrap-vue
+// Import Bootstrap and BootstrapVue CSS files (order is important)
+//import 'bootstrap/dist/css/bootstrap.css'
 //importar bootstrap
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import Bootstrap from "bootstrap/dist/js/bootstrap.bundle.js";
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
 /**libreria fontAsome */
 import { library } from '@fortawesome/fontawesome-svg-core'
 /**Alertas con sweetAlert2 */
